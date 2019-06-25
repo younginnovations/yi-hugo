@@ -1,0 +1,18 @@
+/*Righteous Google font*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+/*Poppins Google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+
+:root {
+    --color-bg-primary: #232323;
+    --color-text-primary: #ffff8c;
+    --color-text-base-color: #fff;
+    --color-base-link: #fff;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
