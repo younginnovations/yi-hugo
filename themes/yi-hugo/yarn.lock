@@ -6141,6 +6141,11 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
+tailwindcss-spaced-items@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-spaced-items/-/tailwindcss-spaced-items-0.1.0.tgz#e7f381e5c780a034bcdbc38a6a2cfb31f828a020"
+  integrity sha512-YiT1h89fp13r6I+EBM8wS1RWfsTwzHSi4BAnHoTXXQK1GQ53DUCPeFNmiksYSdx2aQLMdp/DTPvErqBVfTALiQ==
+
 tailwindcss@^1.0.2:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.0.5.tgz#5145fd61f251be06a77748819e12fb126914095d"

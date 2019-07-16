@@ -1,5 +1,12 @@
-/*Poppins Google font*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+/*Open Sans Google font*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+:root {
+    --primary: #ff6200;
+    --secondary: #ff6200;
+    --white: #ffffff;
+    --black-dark: #3c3430;
+}
 
 @tailwind base;
 
