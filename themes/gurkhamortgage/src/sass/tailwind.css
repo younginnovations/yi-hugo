@@ -1,0 +1,17 @@
+/*Popins Google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+:root {
+    --primary: #A52978;
+    --secondary: #F6FCFE;
+    --black-dark: #2f2f2f;
+    --white: #ffffff;
+    --light-white: #F6FCFE;
+    --base-color: #999999;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

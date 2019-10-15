@@ -3,7 +3,7 @@ backend:
   publish_mode: editorial_workflow
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "themes/ync/static/img" # Folder where user uploaded files should go
+media_folder: "themes/gurkhamortgage/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit

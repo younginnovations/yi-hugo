@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head.html" }}
+
+<body class="antialiased font-body leading-snug text-base-color">
+
+{{ partial "header" . }}
+
+<main>
+    {{ block "main" . }} {{end}}
+</main>
+
+{{ partial "footer" . }}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<!-- Scripts -->
+{{ $scripts := resources.Get "js/manifest.js" | fingerprint }}
+{{ with $scripts }}
+<script type="text/javascript" src="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ $.Scratch.Set "$scripts" . }}
+{{ end }}
+
+{{ $scripts := resources.Get "js/vendor.js" | fingerprint }}
+{{ with $scripts }}
+<script type="text/javascript" src="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ $.Scratch.Set "scripts" . }}
+{{ end }}
+
+{{ $scripts := resources.Get "js/app.js" | fingerprint }}
+{{ with $scripts }}
+<script type="text/javascript" src="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ $.Scratch.Set "scripts" . }}
+{{ end }}
+</body>
+
+</html>
